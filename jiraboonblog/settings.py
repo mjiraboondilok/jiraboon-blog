@@ -28,9 +28,6 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY',
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -136,5 +133,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
-ALLOWED_HOSTS = ['web-production-0856.up.railway.app', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://web-production-0856.up.railway.app']
+ALLOWED_HOSTS = ['jiraboon.up.railway.app', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://jiraboon.up.railway.app']
