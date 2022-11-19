@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn jiraboonblog.wsgi
+web: python manage.py collectstatic && gunicorn jiraboonblog.wsgi
